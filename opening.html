@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type= "text/css" href="style.css">
+
+    <title>Hexed: Lab 5&6</title>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="opening.js"></script>
+
+    <!-- from example -->
+</head>
+<body>
+    <!-- Popup with game instructions, opens when instructions button clicked-->
+    <div id="popup">
+        <div id="popup-content">
+          <h2 id="greeting">You've been hexed!</h1>
+          <p>
+                In order to undo the hex, you must correctly guess the hex code of the potion in 
+                the cauldron! Move the sliders or type in a value 00-FF for the red, green, and blue colors. <br>
+                Be careful: you have a limited number of guesses. If you run out of guesses, you’ll be hexed forever! <br>
+                Good luck!
+
+          </p>
+          <img src="cauldron.png" alt="graphic of cauldron" class="instruc_img">
+          <p><br></p>
+          <button id="exit">
+             Exit Instructions
+          </button>
+        </div>
+    </div>
+    <div id = "title_div">
+        <!--<h1>Hexed!</h1>-->
+        <img src="hexed_logo.png" height="400" width = "520" alt="Hexed game logo">
+        <form id="starting_settings_form"> <!--no form action needed? if we're not using PHP-->
+                <br>
+                Name (required): <br> <input type="text" name="name" id="p-name"> <br>
+                Number of turns (1-5): <br> <input type="text" name="turns" id="p-turns">
+        </form>
+    </div>
+    <div id = "buttons_div">
+        <button type="button" id="instruction">
+            Instructions
+        </button>
+        <button type="submit" id="start_game">
+            Submit and Start Game
+        </button>
+    </div>
+</body>
+</html>

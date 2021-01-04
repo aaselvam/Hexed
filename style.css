@@ -1,0 +1,281 @@
+html{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* border-style: dashed; */
+    background-color: #8d7cc2;
+}
+
+#head_div{
+    width: 100%;
+    height:5vw;
+}
+h1{
+    /* margin-top: 3vw; */
+    /* margin-bottom: 1vw; */
+    text-align: center;
+}
+
+h3{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.s{
+    display: inline-block;
+}
+
+.n{
+    display: inline-block;
+}
+
+.t{
+    display: inline-block;
+}
+
+#timer_div{
+    padding-top: 140px;
+    padding-bottom: -20px;
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+#score_div {
+    margin-top: -30px;
+    padding-right: 20px;
+}
+button {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+#left_div{
+    float: left;
+    width: 20%;
+    /* border-style: dashed; */
+
+}
+#mid_div{
+    float: left;
+    width: 50%;
+    /* border-style: dashed; */
+
+}
+#witch_pic{
+    height: 20vw;
+    width: 15vw;
+    margin-left: 10vw;
+}
+#right_div{
+    float: left;
+    width: 28%;
+    background-image: url("");
+    /* border-style: dashed; */
+
+}
+#colordisplay_div{
+    /* border-style: dashed; */
+}
+#witch_pic_div{
+    float: left;
+    width: 48%;
+    /* border-style: dashed; */
+    margin-right: 1%;
+    margin-bottom: 3vw;
+}
+#color_estimate_div{
+
+    float: left;
+    width: 49%;
+    /* border-style: dashed; */
+}
+#setting_img{
+    margin-top: 34vw;
+    margin-left: 3vw;
+    height: 4vw;
+    width: 5.5vw;
+  
+}
+#timer_div{
+    /* border-style: dashed; */
+    height: 5vw;
+}
+#guess_div{
+    /* border-style: dashed; */
+}
+#guessandnew_button{
+    margin-left: 5vw;
+    margin-top: 10vw;
+    height: 6vw;
+    width: 10vw;
+    font-size: 2vw;
+    text-align: center;
+    border-radius: 1.5vw;
+    border-width: 0.25vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url("guess_button_text.png");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#estimate_div{
+    height: 15vw;
+    width: 20vw;
+    background-image: url("speachbubble.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#estimate{
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 45px;
+    text-align: center;
+    font-size: 20px;
+}
+/* code from internet to show how it works */
+@keyframes bgcolor {
+    0% {
+        background-color: #45a3e5
+    }
+
+    30% {
+        background-color: #66bf39
+    }
+
+    60% {
+        background-color: #eb670f
+    }
+
+    90% {
+        background-color: #f35
+    }
+
+    100% {
+        background-color: #864cbf
+    }
+}
+
+#color_div{
+    width: 10vw;
+    height: 10vw;
+    margin-bottom: 3vw;
+    /*-webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;*/
+    /* border-style: dashed; */
+}
+#color_pic{
+    height: 10vw;
+    width: 10vw;
+}
+#input_rgb{
+    width: 10vw;
+    float: right;
+    margin-right: 5vw;
+
+}
+
+#red_slider {
+    -webkit-appearance: none;  
+    appearance: none;
+    width: 65%; 
+    height: 18px; 
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right, white , red); 
+    outline: solid; 
+  }
+
+#green_slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 65%;
+    height: 18px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right, white , limegreen);
+    outline: solid; 
+}
+
+#blue_slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 65%;
+    height: 18px; 
+    background-image: linear-gradient(to right, white , blue);
+    outline: solid; 
+}
+
+#red_slider .ui-slider-handle {
+    background-color: black;
+    /* background-image: url("potion.png");
+    background-size: contain; */
+}
+
+#green_slider .ui-slider-handle {
+    background-color: black;
+}
+
+#blue_slider .ui-slider-handle {
+    background-color: black;
+}
+  
+
+textarea{
+    margin-left: 2vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    width: 6vw;
+}
+
+
+/* Opening Screen */
+#title_div{
+    text-align: center;
+    border-left: 50%;
+    border-left: 50%;
+    
+}
+
+#buttons_div{
+    border-left: 50%;
+    border-left: 50%;
+    margin-top: 2%;
+    text-align: center;
+    
+}
+
+.instruc_img{
+    height: 100px;
+    width: 100px;
+}
+
+#popup{
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    margin-top: 50px;
+    background-color: #8d7cc2;
+}
+
+#popup-content {
+    margin: auto;
+    padding: 20px;
+    border: 5px solid #888;
+    border-radius: 50px 50px;
+    width: 80%;
+    height: 70%;
+    color: black;
+    border-color: black;
+}
+
+.tombstone{
+    background-image: url("tombstone.png");
+    background-size: contain;
+    height: 300px;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-right: 130px;
+}

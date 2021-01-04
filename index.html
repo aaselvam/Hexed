@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type= "text/css" href="style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="hexed.js"></script>
+    <title>Lab 5&6</title>
+    
+</head>
+<body id="game-element">
+    
+    <div id = "head_div">
+        <!--<h1>Hexed</h1>-->
+        <img id = "logo" src="hexed_logo.png" height="100" width = "150" alt="Hexed game logo">
+    </div>
+
+    <div id = "left_div">
+        <a href="opening.html"><img id = "setting_img" src = "settings_button.png" alt = "setting"></a>
+    </div>
+
+    <div id = "mid_div">
+        <div id = "colordisplay_div">
+            <div id = "witch_pic_div">
+                <img id = "witch_pic" src = "new_witch.png" alt = "black and white watercolor image of a witch">
+
+            </div>
+            <div id = "color_estimate_div">
+                <div id = "estimate_div">
+                    <p id = "estimate">Hex correctly and I'll remove the curse!</p>
+                </div>
+                <div id = "color_div">
+                    <img id = "color_pic" src = "cauldron.png" alt = "random_color">
+                </div>
+            </div>
+        </div>
+
+        <div id = "input_rgb">
+            <textarea id='out1'></textarea>
+            <textarea id='out2'></textarea>
+            <textarea id='out3'></textarea>
+        </div>
+
+        <div id = "sliders_div">
+            <label for="red_value">Red value:</label>
+            <div id ="red_slider"></div>
+            <label for="green_value">Green value:</label>
+            <div id ="green_slider">
+            </div>
+            <label for="blue_value">Blue value:</label>
+            <div id ="blue_slider">
+                
+            </div>
+        </div>
+    </div>
+
+    <div id = "right_div">
+        <div class = 'tombstone'>
+            <div id = "timer_div">
+                <h3 class="s">Timer: </h3>
+                <h3 class="s" id="timer" onclick="clearInterval(timer)">0</h3>
+            </div>
+            <div id="score_div">
+                <h3 class="s">Best Score: </h3>
+                <h3 class="s" id="score">0</h3>
+            </div>
+            <div id="name_div">
+                <h3 class="n">Name: </h3>
+                <h3 class="n" id="player_name">Default</h3>
+            </div>
+            <div id="num_guess_div">
+                <h3 class="t">Turns Left: </h3>
+                <h3 class="t" id="num_guess">3</h3>
+            </div>
+        </div>
+        <div id = guess_div>
+            <button type = "button" id = "guessandnew_button"></button>
+        </div>
+    </div>
+
+</body>
+</html>
